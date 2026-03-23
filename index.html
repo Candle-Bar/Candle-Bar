@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candle Bar | Luxury Handmade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Candle Bar</h1>
+        <p>Luxury handmade candles | Soft scents | Cozy Vibes</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Featured Collection</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Vanilla Swirl">
+                    <h3>Vanilla Swirl</h3>
+                    <p class="price">$7.49</p>
+                    <button class="add-btn" onclick="addToCart('Vanilla Swirl', 7.49)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Strawberry Kingdom">
+                    <h3>Strawberry Kingdom</h3>
+                    <p class="price">$7.49</p>
+                    <button class="add-btn" onclick="addToCart('Strawberry Kingdom', 7.49)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Lavender Paradise">
+                    <h3>Lavender Paradise</h3>
+                    <p class="price">$7.49</p>
+                    <button class="add-btn" onclick="addToCart('Lavender Paradise', 7.49)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2>Your Shopping Bag</h2>
+            <div id="cart-container">
+                <ul id="cart-items">
+                </ul>
+                <div class="cart-total">
+                    <strong id="total-price">Total: $0.00</strong>
+                </div>
+                <button class="checkout-btn" onclick="processCheckout()">Checkout & Pay</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
